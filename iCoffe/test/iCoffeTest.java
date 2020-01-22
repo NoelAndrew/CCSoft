@@ -14,10 +14,7 @@ import static org.junit.Assert.*;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 
-/**
- *
- * @author jluis
- */
+
 public class iCoffeTest {
     
     @Rule       

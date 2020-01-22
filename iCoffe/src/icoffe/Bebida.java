@@ -3,8 +3,8 @@ package icoffe;
 import java.util.regex.Pattern;
 
 public class Bebida {
-    String nombre;
-    int [] tamanios = new int[5];
+    String NombreCafe;
+    int [] TamañoCafe = new int[5];
    
     Bebida(String cadena)
     {
@@ -23,14 +23,14 @@ public class Bebida {
              
              if(Tam3(Tam2))
              {
-                 nombre = Nom2[0];
+                 NombreCafe = Nom2[0];
                  System.out.println("Nombre del cafe: " + Nom2[0] );
                  System.out.println("Hay " + Tam2.length + " tamaños" );
                  for(int w = 0; w < Tam2.length ; w++)
                  {
                      int n = w + 1;
                       System.out.println("El tamaño "+ n +" es: "+Tam2[w]+" " );
-                      tamanios[w] = Integer.parseInt(Tam2[w]);
+                      TamañoCafe[w] = Integer.parseInt(Tam2[w]);
                  }
              }
         }
@@ -88,6 +88,7 @@ public class Bebida {
     {
         onza = onza.replace(" ", "");
         try {
+        	
                     Integer.parseInt(onza);
                     return true;
             }
