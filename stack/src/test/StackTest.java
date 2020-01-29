@@ -85,4 +85,3 @@ class StackTest {
 		}
 	}
 }
-// end::user_guide[]
