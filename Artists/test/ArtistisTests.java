@@ -126,14 +126,14 @@ public class ArtistisTests {
      @Test(expected=RuntimeException.class)
      public void MinTamNum() // El tamaño al menos debe de ser de 1
     {
-       assertTrue(Banda.Ranking(""));
+       Banda.Ranking("");
     }
      //Ranking 11
      @Test(expected=RuntimeException.class)
      public void Masde10() // El tamaño al menos debe de ser de 1
     {
-       assertTrue(Banda.Ranking("11"));
-       assertTrue(Banda.Ranking("40"));
+       Banda.Ranking("11");
+       Banda.Ranking("40");
 
     }
      
@@ -142,7 +142,7 @@ public class ArtistisTests {
      @Test(expected=RuntimeException.class)
      public void numeroNegativo() // El tamaño al menos debe de ser de 1
     {
-       assertTrue(Banda.Ranking("-1"));
+       Banda.Ranking("-1");
     }
    //Primero el nombre
      @Test(expected=RuntimeException.class)
@@ -159,13 +159,13 @@ public class ArtistisTests {
      @Test(expected=RuntimeException.class)
      public void NoOrder() 
      {
-    	 assertFalse(Banda.Tam("9,10,6"));
+    	 Banda.Tam("9,10,6");
      }
      //Separacion por comas
      @Test(expected=RuntimeException.class)
      public void Coma() 
      {
-         assertTrue(Banda.Tam("Nirvana.10"));
+        Banda.Tam("Nirvana.10");
      }
      //Espacio en string
      
@@ -177,7 +177,7 @@ public class ArtistisTests {
       @Test(expected=RuntimeException.class)
       public void SpecialChar() 
       {
-          assertTrue(Banda.NombreInicio("N/ir*va+na"));
+          Banda.NombreInicio("N/ir*va+na");
       
       }
       
